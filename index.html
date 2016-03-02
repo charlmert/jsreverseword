@@ -1,0 +1,21 @@
+<html>
+	<title>jsreverse - reverse words in a string</title>
+	<script type="text/javascript" src="js/util.js"></script>
+	<script type="text/javascript">
+		/**
+		 * This function performs the action of taking from the input textbox
+		 * and displaying the reversed words in the output div.
+		 */
+		function doReverseWords() {
+			document.getElementById('output').innerHTML = reverseWords(document.getElementById('str_input').value);
+		}
+	</script>
+	<body>
+		<input id="str_input" type="text" value="The quick brown fox jumps over the lazy dog."/>
+		<input id="btn_submit" type="button" value="Reverse Words" onclick="doReverseWords('output')"/>
+		<br/>
+		<div id="output">
+
+		</div>
+	</body>
+</html>
